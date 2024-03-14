@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-"""Represents a multiplier function"""
+'''Task eight's module.
+'''
 from typing import Callable
 
 
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
-    """Return a multiplier function"""
-
-    def worker(number: float) -> float:
-        return multiplier * number
-
-        return worker
+    """'Defines a multiplier function.
+    """
+    return lambda x: x * multiplier
